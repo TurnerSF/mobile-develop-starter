@@ -1,3 +1,4 @@
+
 main {
   margin-top: 60px;
 }
@@ -6,7 +7,7 @@ main h1 {
   margin: 0 10px;
   text-align: center;
   font-family: "Amatic SC", cursive;
-  font-size: 65px;
+  font-size: 40px;
 }
 
 main h2 {
@@ -26,4 +27,40 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+main img {
+  display: block;
+  margin: 0 auto; 
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 30px;
+  }
+
+  main h2 {
+    font-size: 18px;
+  }
+
+  main h3 {
+    font-size: 16px;
+  }
+
+  main img {
+    width: 100%;
+    max-width: 400px;
+    float: none;
+    margin: 0 auto 20px;
+  }
+  
+
+  main::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
